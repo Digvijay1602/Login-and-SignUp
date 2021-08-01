@@ -4,6 +4,9 @@
         <title>Login or SignUp</title>
         <link rel="stylesheet" href="style.css">
         <script src=' https://code.jquery.com/jquery-3.6.0.min.js'></script>
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
     </head>
     <body>
         <div class="login-page">
@@ -19,7 +22,7 @@
                 <form class="login-form">
                     <input type="text" placeholder="username"/>
                     <input type="password" placeholder="password"/>
-                    <button>login</button>
+                    <button id="btn"><a href="resume.html">login</a></button>
                     <p class="message">Not Registered?<a href="#">register here</a></p>
                 </form>
             </div>
@@ -27,7 +30,7 @@
         
         <script>
             $('.message a').click(function(){
-                $('form').animate({height: "toggle", opacity: "toggle"},"slow");
+            $('form').animate({height: "toggle", opacity: "toggle"},"slow");
             });
         </script>
         
